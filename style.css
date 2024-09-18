@@ -10,6 +10,7 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 .container{
@@ -29,11 +30,14 @@ body{
     flex-direction: row;
     align-items: center;
     gap: 20px;
+    font-weight: 600;
+    color: white;
 }
 
 .side-item img{
     height: 20px;
     margin-left: 20px;
+    filter: invert(100%) sepia(2%) saturate(0%) hue-rotate(216deg) brightness(106%) contrast(106%);;
 }
 
 .header{
