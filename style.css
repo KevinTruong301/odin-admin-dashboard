@@ -111,6 +111,14 @@ body{
 
 .account{
     grid-column: 3/5;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.account img{
+    height: 45px;
+    margin-left: 20px;
 }
 
 .alarm img{
@@ -121,4 +129,41 @@ body{
 .alarm{
     align-content: center;
     text-align: end;
+}
+
+.welcome-bar{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+
+.welcome-bar img{
+    height: 100px;
+    grid-row: 1/3;
+    align-self:center;
+    justify-self: end;
+}
+
+.welcome-bar .hello{
+    align-self: flex-end;
+    margin-bottom: 10px;
+    font-size: calc(var(--sidebarFontSize) - .2rem);
+    font-weight: 600;
+}
+
+.welcome-bar .user-id{
+    margin-top: 0;
+    font-size: var(--homeFontSize);
+    font-weight: 600;
+}
+
+.header button{
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+    align-self: center;
+    border: 0;
+    background-color: var(--sidebarColor);
+    color: var(--headerColor);   
 }
