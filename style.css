@@ -164,11 +164,10 @@ body{
 }
 
 .header button{
-    height: 40px;
-    width: 100px;
+    margin: 20px 30px 20px 30px;
+
     border-radius: 30px;
-    align-self: center;
-    justify-self: center;
+
     border: 0;
     background-color: var(--sidebarColor);
     color: var(--headerColor);   
