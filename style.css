@@ -19,7 +19,7 @@ body{
     padding: 0;
     font-family: "Roboto", sans-serif;
     min-height: 640px;
-    min-width: 1080px;
+    min-width: 1366px;
     background-color: var(--infoColor);
 }
 
@@ -205,7 +205,7 @@ body{
 
 .card{
     background-color: var(--headerColor);
-    height: 180px;
+    height: 200px;
     border-radius: 10px;
     display: grid;
     grid-template-rows: 1fr 4fr 1fr;
@@ -234,9 +234,45 @@ body{
 .announce-info{
     background-color: var(--headerColor);
     border-radius: 10px;
+    padding: 20px;
+    display: grid;
+}
+
+.announce-info p{
+    font-weight: 400;
+    font-size: small;
+}
+
+.announce-info h4{
+    margin-bottom: 0;
 }
 
 .trend-info{
     background-color: var(--headerColor);
     border-radius: 10px;
+    padding: 20px;
+    display: grid;
+}
+
+.trend-user{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.trend-user img{
+    height: 70px;
+    grid-row: 1/3;
+    align-self:center;
+    justify-self: end;
+}
+
+.trend-user .user-id{
+    margin: 0;
+    align-self: self-end;
+}
+
+.trend-user .job{
+    margin: 0;
+    font-weight: 400;
 }
