@@ -99,7 +99,7 @@ body{
 }
 
 .search-logo{
-    height: 20px;
+    height: var(--sidebarLogoSize);
     margin-left: 35px;
 }
 
@@ -108,7 +108,7 @@ body{
     border-radius: 20px;
     background-color: var(--infoColor);
     border: 0;
-    height: 25px;
+    height: 2rem;
     margin-left: 15px;
     outline: none;
     padding-left: 14px;
@@ -126,8 +126,13 @@ body{
     margin-left: 20px;
 }
 
+.account p{
+    font-size: var(--sidebarFontSize);
+    font-weight: 700;
+}
+
 .alarm img{
-    height: 20px;
+    height: var(--sidebarLogoSize);
     margin-right: 10px;
 }
 
@@ -138,7 +143,7 @@ body{
 
 .welcome-bar{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 1fr;
     
 }
@@ -167,7 +172,7 @@ body{
     margin: 20px 30px 20px 30px;
 
     border-radius: 30px;
-
+    font-size: var(--sidebarFontSize);
     border: 0;
     background-color: var(--sidebarColor);
     color: var(--headerColor);   
@@ -182,7 +187,7 @@ body{
     gap: 20px;
     margin: 5px;
 }
-@media (max-width: 1080px) {
+@media (max-width: 1210px) {
     .info{
         grid-template-rows: 500px 500px 1fr;
     }
